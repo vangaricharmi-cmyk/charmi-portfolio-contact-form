@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmi | AI & ML Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111827;
+            padding: 16px 8%;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #93c5fd;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* General sections */
+        section {
+            max-width: 1050px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #1d4ed8;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #dbeafe;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Internship */
+        .experience {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .experience h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Charmi</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Hi, I'm Charmi 👋</h1>
+
+            <h2>
+                Computer Science Student | AI & ML Enthusiast
+            </h2>
+
+            <p>
+                I enjoy building practical projects, exploring
+                Machine Learning and Artificial Intelligence, and
+                developing useful web experiences.
+            </p>
+
+            <a href="#projects" class="btn primary">
+                View My Work
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a B.Tech Computer Science student interested in
+                Artificial Intelligence, Machine Learning and Web Development.
+            </p>
+
+            <br>
+
+            <p>
+                I like learning by building projects and experimenting
+                with new technologies. I am currently gaining practical
+                experience through my Machine Learning internship at FlyRank AI.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Artificial Intelligence</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">SQL</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Landing Page</h3>
+
+                <p>
+                    A responsive landing page developed using
+                    HTML and CSS with a focus on layout and
+                    user-friendly design.
+                </p>
+
+                <a href="https://github.com/vangaricharmi-cmyk/LandingPage"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Temperature Converter</h3>
+
+                <p>
+                    A web application for converting temperatures
+                    between different units using HTML, CSS and JavaScript.
+                </p>
+
+                <a href="https://github.com/vangaricharmi-cmyk/Temperature-"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    My earlier portfolio project created to practice
+                    front-end web development and present my skills.
+                </p>
+
+                <a href="https://github.com/vangaricharmi-cmyk/PORTFOLIO"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+            </div>
+
+
+            <div class="project">
+                <h3>Monument Identification</h3>
+
+                <p>
+                    An academic project involving Machine Learning
+                    and monument identification with 3D visualization
+                    concepts.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="experience">
+
+            <h3>Machine Learning Intern — FlyRank AI</h3>
+
+            <p>
+                Currently gaining practical experience in Artificial
+                Intelligence and Machine Learning through structured
+                internship assignments and AI-assisted development.
+            </p>
+
+        </div>
+
+    </section>
+    
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact">
+
+            <p>
+            Interested in connecting or discussing a project?
+            </p>
+
+            <br>
+
+            <form action="https://formspree.io/f/mw1krnob" method="POST">
+
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <br>
+
+            <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/vangaricharmi-cmyk"
+               target="_blank">
+                github.com/vangaricharmi-cmyk
+            </a>
+            </p>
+
+            <br>
+
+            <p>
+            Hyderabad, India
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Charmi | Personal Portfolio</p>
+
+        <p>Built with HTML & CSS</p>
+
+    </footer>
+
+</body>
+</html>
